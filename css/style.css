@@ -394,8 +394,10 @@ body.light .progress-bar {
         margin-top: 10px;
     }
     .theme-toggle-btn {
-        margin-left: 0;
-        margin-top: 10px;
+        bottom: 20px;
+        left: 20px;
+        top: auto;
+        right: auto;
     }
 }
 
