@@ -20,7 +20,7 @@ body {
 
 /* LIGHT THEME OVERRIDE */
 body.light {
-    background: linear-gradient(120deg, #ffffff, #ff00ff);
+    background: linear-gradient(120deg, #ffffff, #ffa4ff);
     color: #222;
 }
 
