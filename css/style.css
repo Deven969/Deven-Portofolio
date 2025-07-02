@@ -20,7 +20,7 @@ body {
 
 /* LIGHT THEME OVERRIDE */
 body.light {
-    background: linear-gradient(120deg, #ffffff, #ffa4ff);
+    background: linear-gradient(120deg, #ffffff, #81a6f2);
     color: #222;
 }
 
@@ -38,20 +38,20 @@ body.light .cursor {
 }
 
 body.light .theme-toggle button {
-    background: linear-gradient(90deg, #ffb3ec 60%, #ffd6f5 100%);
-    color: #a020f0;
+    background: linear-gradient(90deg, #81d7ff 60%, #ffd6f5 100%);
+    color: #0040ff;
     border: none;
 }
 
 
 body.light .theme-toggle button:hover {
-    background: #ff02ea;
-    color: #ff00b7;
+    background: #38b0ff;
+    color: #ffffff;
 }
 
 body.light .card {
     background: #ffffff;
-    border: 1px solid #f0c3f5;
+    border: 1px solid #00fffb;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 

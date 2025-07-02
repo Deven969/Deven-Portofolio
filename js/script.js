@@ -46,7 +46,7 @@ window.onload = () => {
 
 // 3. Scroll to top button
 const scrollBtn = document.createElement("button");
-scrollBtn.textContent = "⬆️";
+scrollBtn.textContent = "↑";
 scrollBtn.className = "scroll-top";
 scrollBtn.style.display = "none";
 document.body.appendChild(scrollBtn);
