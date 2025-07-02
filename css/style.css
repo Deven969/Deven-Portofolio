@@ -20,14 +20,14 @@ body {
 
 /* LIGHT THEME OVERRIDE */
 body.light {
-    background: linear-gradient(120deg, #fdf6e3, #d2b48c);
+    background: linear-gradient(120deg, #f3e5ab, #c2b280);
     color: #3e2f1c;
 }
 
 body.light header,
 body.light footer {
     color: #4b3b2a;
-    background: rgba(210, 180, 140, 0.15);
+    background: rgba(210, 180, 140, 0.25);
 }
 
 body.light .highlight {
@@ -39,20 +39,30 @@ body.light .cursor {
 }
 
 body.light .theme-toggle button {
-    background: linear-gradient(90deg, #d2b48c 60%, #f5deb3 100%);
+    background: linear-gradient(90deg, #c2b280 60%, #f3e5ab 100%);
     color: #4b3b2a;
     border: none;
+    box-shadow: 0 2px 8px rgba(139, 94, 60, 0.2);
 }
 
 body.light .theme-toggle button:hover {
-    background: #c19a6b;
+    background: #a67b5b;
     color: #ffffff;
 }
 
 body.light .card {
     background: #fffaf3;
-    border: 1px solid #deb887;
+    border: 1px solid #d2b48c;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+body.light .profile-img {
+    border: 6px solid #d2b48c;
+    box-shadow: 0 0 30px #b8860b99;
+}
+
+body.light .profile-img:hover {
+    box-shadow: 0 0 40px #8b4513aa;
 }
 
 /* TOGGLE BUTTON */
@@ -64,10 +74,10 @@ body.light .card {
 }
 
 .theme-toggle button {
-    background: linear-gradient(90deg, #a020f0 60%, #71019e 100%);
+    background: linear-gradient(90deg, #a0522d 60%, #8b4513 100%);
     color: #fff;
     border: none;
-    box-shadow: 0 2px 8px #a020f055;
+    box-shadow: 0 2px 8px #8b451355;
     font-weight: bold;
     letter-spacing: 1px;
     border-radius: 8px;
@@ -78,7 +88,7 @@ body.light .card {
 }
 .theme-toggle button:hover {
     background: #fff;
-    color: #a020f0;
+    color: #8b4513;
     transform: scale(1.08);
 }
 
@@ -90,9 +100,9 @@ header {
     padding: 48px 24px;
     max-width: 1200px;
     margin: 0 auto;
-    background: rgba(160, 32, 240, 0.07);
+    background: rgba(139, 69, 19, 0.07);
     border-radius: 18px;
-    box-shadow: 0 8px 32px rgba(160,32,240,0.15);
+    box-shadow: 0 8px 32px rgba(139, 69, 19, 0.15);
 }
 
 .header-content {
@@ -106,13 +116,13 @@ header {
     height: 220px;
     border-radius: 50%;
     object-fit: cover;
-    border: 6px solid #ff00ea24;
-    box-shadow: 0 0 30px #a020f0aa;
+    border: 6px solid #8b451320;
+    box-shadow: 0 0 30px #8b4513aa;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 .profile-img:hover {
     transform: scale(1.05) rotate(-2deg);
-    box-shadow: 0 0 40px #a020f0cc;
+    box-shadow: 0 0 40px #a0522dcc;
 }
 
 /* CARD */
