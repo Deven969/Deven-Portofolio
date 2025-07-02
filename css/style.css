@@ -213,6 +213,14 @@ header {
     transform: translateY(-4px) scale(1.01);
 }
 
+/* TAGLINE */
+.tagline {
+    font-size: 1.3rem;
+    color: #783701;
+    margin-top: 12px;
+    transition: color 0.4s ease;
+}
+
 /* ... rest of the CSS file ... */
 
 
