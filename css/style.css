@@ -48,9 +48,10 @@ body.light .theme-toggle button:hover {
 }
 
 body.light .card {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 240, 245, 0.9); /* light pink background */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+
 
 /* TOGGLE BUTTON */
 .theme-toggle {
@@ -173,7 +174,15 @@ main {
     color: #fff;
     text-shadow: 0 2px 8px #a020f055;
     margin-bottom: 18px;
+    transition: color 0.4s ease, text-shadow 0.4s ease;
 }
+
+body.light .section h2 {
+    color: #a020f0;
+    text-shadow: 0 1px 4px #ffffffaa;
+}
+
+
 
 .highlight {
     color: #a020f0;
