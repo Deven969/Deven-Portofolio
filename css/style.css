@@ -38,17 +38,17 @@ body.light .cursor {
 }
 
 body.light .theme-toggle button {
-    border-color: #0066cc;
-    color: #0066cc;
+    border-color: #4e0241;
+    color: #ff00e187;
 }
 
 body.light .theme-toggle button:hover {
-    background: #0066cc;
-    color: #fff;
+    background: #ff02ea;
+    color: #ff00b7;
 }
 
 body.light .card {
-    background: rgba(255, 240, 245, 0.9); /* light pink background */
+    background: rgba(133, 178, 255, 0.9); /* light pink background */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
