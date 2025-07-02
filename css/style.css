@@ -38,9 +38,11 @@ body.light .cursor {
 }
 
 body.light .theme-toggle button {
-    border-color: #4e0241;
-    color: #ff00e187;
+    background: linear-gradient(90deg, #ffb3ec 60%, #ffd6f5 100%);
+    color: #a020f0;
+    border: none;
 }
+
 
 body.light .theme-toggle button:hover {
     background: #ff02ea;
@@ -48,9 +50,11 @@ body.light .theme-toggle button:hover {
 }
 
 body.light .card {
-    background: rgba(255, 255, 255, 0.9); /* light pink background */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border: 1px solid #f0c3f5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
+
 
 
 /* TOGGLE BUTTON */
@@ -178,9 +182,10 @@ main {
 }
 
 body.light .section h2 {
-    color: #a020f0;
-    text-shadow: 0 1px 4px #ffffffaa;
+    color: #a020f0; /* tetap pakai warna tema ungu */
+    text-shadow: none;
 }
+
 
 
 
@@ -412,4 +417,25 @@ body.light .progress-bar {
 
 section {
     scroll-margin-top: 80px; /* atau setinggi navbar kamu */
+}
+
+/* ======= OVERRIDE NAVBAR SAAT LIGHT MODE ======= */
+body.light .navbar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08) !important;
+  transition: background 0.5s ease, box-shadow 0.5s ease;
+}
+
+body.light .navbar-menu li a {
+  color: #a020f0 !important;
+}
+
+body.light .navbar-menu li a:hover,
+body.light .navbar-menu li a.active {
+  color: #a020f0 !important;
+  border-bottom: 2px solid #a020f0 !important;
+}
+
+body.light .navbar-logo {
+  color: #a020f0 !important;
 }
