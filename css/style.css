@@ -186,16 +186,17 @@ main {
     border-bottom: none;
 }
 
+/*bagian tentang Tentang Saya */
 .section h2 {
     font-size: 2rem;
-    color: #fff;
-    text-shadow: 0 2px 8px #a020f055;
+    color: #593605;
+    text-shadow: 0 2px 8px #ff990055;
     margin-bottom: 18px;
     transition: color 0.4s ease, text-shadow 0.4s ease;
 }
 
 body.light .section h2 {
-    color: #a020f0; /* tetap pakai warna tema ungu */
+    color: #451d00; /* tetap pakai warna tema ungu */
     text-shadow: none;
 }
 
