@@ -365,7 +365,7 @@ body.light .progress-bar {
 
 .theme-toggle-btn {
     background: linear-gradient(90deg, #a020f0 60%, #71019e 100%);
-    color: #fff;
+    color: #6c0376;
     border: none;
     border-radius: 8px;
     padding: 8px 16px;
@@ -375,7 +375,7 @@ body.light .progress-bar {
     transition: background 3.3s, color 3.3s, transform 3.2s;
 }
 .theme-toggle-btn:hover {
-    background: #fff;
+    background: #620357;
     color: #a020f0;
     transform: scale(1.08);
 }
