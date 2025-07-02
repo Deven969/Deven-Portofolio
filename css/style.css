@@ -465,7 +465,7 @@ body.light .navbar-menu li a {
 
 body.light .navbar-menu li a:hover,
 body.light .navbar-menu li a.active {
-  color: #000000 !important;
+  color: #4d2d00 !important;
   border-bottom: 2px solid #ffffff !important;
 }
 
