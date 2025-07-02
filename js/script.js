@@ -46,7 +46,7 @@ window.onload = () => {
 
 // 3. Scroll to top button
 const scrollBtn = document.createElement("button");
-scrollBtn.textContent = "↑";
+scrollBtn.textContent = "⬆️";
 scrollBtn.className = "scroll-top";
 scrollBtn.style.display = "none";
 document.body.appendChild(scrollBtn);
@@ -100,4 +100,11 @@ window.addEventListener("scroll", () => {
       bar.style.width = bar.getAttribute('style').match(/width:\s*([\d.]+%)/)[1];
     }
   });
+});
+// Toggle navbar menu on mobile
+const mobileToggle = document.getElementById("mobile-menu-toggle");
+const navMenu = document.querySelector(".navbar-menu");
+
+mobileToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
 });

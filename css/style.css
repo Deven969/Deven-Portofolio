@@ -20,18 +20,18 @@ body {
 
 /* LIGHT THEME OVERRIDE */
 body.light {
-    background: linear-gradient(120deg, #e6ccb2, #a47149);
+    background: linear-gradient(120deg, #5c3a21, #a67b5b);
     color: #3e2f1c;
 }
 
 body.light header,
 body.light footer {
     color: #4b3b2a;
-    background: rgba(160, 82, 45, 0.25);
+    background: rgba(210, 180, 140, 0.25);
 }
 
 body.light .highlight {
-    color: #7b3f00;
+    color: #8b5e3c;
 }
 
 body.light .cursor {
@@ -39,30 +39,30 @@ body.light .cursor {
 }
 
 body.light .theme-toggle button {
-    background: linear-gradient(90deg, #a47149 60%, #e6ccb2 100%);
+    background: linear-gradient(90deg, #a67b5b 60%, #deb887 100%);
     color: #4b3b2a;
     border: none;
     box-shadow: 0 2px 8px rgba(139, 94, 60, 0.2);
 }
 
 body.light .theme-toggle button:hover {
-    background: #8b5a2b;
+    background: #a0522d;
     color: #ffffff;
 }
 
 body.light .card {
-    background: #fdf5e6;
-    border: 1px solid #deb887;
+    background: #fffaf3;
+    border: 1px solid #d2b48c;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
 body.light .profile-img {
-    border: 6px solid #deb887;
-    box-shadow: 0 0 30px #8b4513aa;
+    border: 6px solid #d2b48c;
+    box-shadow: 0 0 30px #b8860b99;
 }
 
 body.light .profile-img:hover {
-    box-shadow: 0 0 40px #5c3317aa;
+    box-shadow: 0 0 40px #8b4513aa;
 }
 
 body.light .progress-bar {
@@ -70,35 +70,39 @@ body.light .progress-bar {
 }
 
 body.light .progress {
-    background: linear-gradient(90deg, #8b5a2b 60%, #5c3317 100%);
+    background: linear-gradient(90deg, #a0522d 60%, #8b4513 100%);
 }
 
 body.light .skill span {
-    color: #5c3317;
+    color: #8b4513;
 }
 
 body.light .section h2 {
-    color: #5c3317;
+    color: #8b4513;
     text-shadow: none;
 }
 
 body.light .navbar {
-    background: rgba(165, 105, 42, 0.9) !important;
-    box-shadow: 0 2px 16px rgba(92, 51, 23, 0.25) !important;
+    background: rgba(104, 61, 0, 0.381) !important;
+    box-shadow: 0 2px 16px rgba(212, 112, 12, 0.516) !important;
 }
 
 body.light .navbar-menu li a {
-    color: #f8f1e9 !important;
+    color: #ffffff !important;
 }
 
 body.light .navbar-menu li a:hover,
 body.light .navbar-menu li a.active {
-    color: #5c3317 !important;
-    border-bottom: 2px solid #f8f1e9 !important;
+    color: #4d2d00 !important;
+    border-bottom: 2px solid #ffffff !important;
 }
 
 body.light .navbar-logo {
-    color: #d2a679 !important;
+    color: #ffffff75 !important;
+}
+
+body.light .tagline {
+    color: #4b2b1b;
 }
 
 /* TOGGLE BUTTON */
@@ -110,7 +114,7 @@ body.light .navbar-logo {
 }
 
 .theme-toggle button {
-    background: linear-gradient(90deg, #8b5a2b 60%, #5c3317 100%);
+    background: linear-gradient(90deg, #a0522d 60%, #8b4513 100%);
     color: #fff;
     border: none;
     box-shadow: 0 2px 8px #8b451355;
@@ -131,35 +135,41 @@ body.light .navbar-logo {
 /* RESPONSIVE NAVBAR FOR MOBILE */
 @media (max-width: 768px) {
     .navbar-container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 16px;
     }
     .navbar-menu {
+        display: none;
         flex-direction: column;
         gap: 12px;
-        width: 100%;
-        margin-top: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        padding: 16px;
+        border-radius: 8px;
+        z-index: 999;
     }
-    .navbar-menu li {
-        width: 100%;
+    .navbar-menu.show {
+        display: flex;
     }
-    .navbar-menu li a {
-        display: block;
-        padding: 10px 0;
-        width: 100%;
-        font-size: 1rem;
-        border-bottom: 1px solid #ccc;
+    .mobile-nav-toggle {
+        background: #8b4513;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
     }
     .navbar {
-        position: static;
-        background: none;
-        box-shadow: none;
-        padding: 0;
-        margin-bottom: 20px;
-    }
-    header {
-        padding-top: 20px;
+        position: relative;
     }
 }
 
@@ -216,12 +226,14 @@ header {
 /* TAGLINE */
 .tagline {
     font-size: 1.3rem;
-    color: #783701;
+    color: #d1b3ff;
     margin-top: 12px;
     transition: color 0.4s ease;
 }
 
-/* ... rest of the CSS file ... */
+body.light .tagline {
+    color: #4b2b1b;
+}
 
 
 
