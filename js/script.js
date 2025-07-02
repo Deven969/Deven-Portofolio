@@ -108,3 +108,17 @@ const navMenu = document.querySelector(".navbar-menu");
 mobileToggle.addEventListener("click", () => {
     navMenu.classList.toggle("show");
 });
+
+const mobileToggle = document.getElementById("mobile-menu-toggle");
+const navMenu = document.querySelector(".navbar-menu");
+
+mobileToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+
+  // Ganti icon ☰ jadi ✖ pas menu kebuka (optional tapi keren)
+  if (navMenu.classList.contains("show")) {
+    mobileToggle.textContent = "✖";
+  } else {
+    mobileToggle.textContent = "☰";
+  }
+});
