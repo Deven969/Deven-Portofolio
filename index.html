@@ -1,92 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Deven</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Deven</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-    <!-- Dark Mode Toggle -->
-    <div class="theme-toggle">
-        <button id="toggle-theme">☀️</button>
+<div class="theme-toggle">
+  <button id="toggle-theme">☀️</button>
+</div>
+
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="#" class="navbar-logo">MyPorto</a>
+    <ul class="navbar-menu">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="home">
+  <div class="header-content">
+    <h1><span class="highlight">Deven</span></h1>
+    <p class="tagline">Mahasiswa • Programmer • Penggemar Kripto<span class="cursor">|</span></p>
+    <div class="social-icons">
+      <a href="https://www.tiktok.com/@devenlovecoffee?_t=ZS-8xVp321PtnE&_r=1" target="_blank"><img src="assets/tiktok.svg" alt="TikTok" /></a>
+      <a href="https://www.instagram.com/devenjs?igsh=MWxjNDU1anAzcHR4dA==" target="_blank"><img src="assets/ig.svg" alt="Instagram" /></a>
+      <a href="https://wa.me/" target="_blank"><img src="assets/whatsapp.svg" alt="WhatsApp" /></a>
     </div>
+  </div>
+  <img src="https://picsum.photos/220" alt="Foto Profil" class="profile-img" />
+</header>
 
-    <nav class="navbar">
-      <div class="navbar-container">
-        <a href="#" class="navbar-logo">MyPorto</a>
-        <ul class="navbar-menu">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+<main>
+  <section id="about" class="section card">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah pembelajar teknologi fokus pada web development, automasi, dan strategi kripto.</p>
+  </section>
 
-    <!-- Header -->
-    <header id="home">
-        <div class="header-content">        
-            <h1><span class="highlight">Deven</span></h1>
-            <p class="tagline">Mahasiswa • Programmer • Penggemar Kripto<span class="cursor">|</span></p>
-            <div class="social-icons">
-                <a href="https://www.tiktok.com/@devenlovecoffee?_t=ZS-8xVp321PtnE&_r=1" target="_blank"><img src="assets/tiktok.svg" alt="TikTok"></a>
-                <a href="https://www.instagram.com/devenjs?igsh=MWxjNDU1anAzcHR4dA==" target="_blank"><img src="assets/ig.svg" alt="Instagram"></a>
-                <a href="https://wa.me/" target="_blank"><img src="assets/whatsapp.svg" alt="WhatsApp"></a>
-            </div>
-        </div>
-        <img src="assets/mukaaku.jpg" alt="Foto Profil" class="profile-img">
-    </header>
+  <section id="skills" class="section card">
+    <h2>My Skills</h2>
+    <div class="skill"><span>HTML</span><div class="progress-bar"><div class="progress" style="width: 90%"></div></div></div>
+    <div class="skill"><span>CSS</span><div class="progress-bar"><div class="progress" style="width: 85%"></div></div></div>
+    <div class="skill"><span>JavaScript</span><div class="progress-bar"><div class="progress" style="width: 70%"></div></div></div>
+    <div class="skill"><span>Python</span><div class="progress-bar"><div class="progress" style="width: 80%"></div></div></div>
+  </section>
 
-    <!-- Main -->
-    <main>
-        <section id="about" class="section card">
-            <h2>Tentang Saya</h2>
-            <p>Saya adalah pembelajar teknologi fokus pada web development, automasi, dan strategi kripto.</p>
-        </section>
+  <section id="projects" class="section card">
+    <h2>Proyek Saya</h2>
+    <ul>
+      <li>🔧 Website Portofolio ini</li>
+      <li>🤖 Bot analisa candlestick crypto</li>
+      <li>📊 Dashboard investasi personal</li>
+    </ul>
+  </section>
 
-        <section id="skills" class="section card">
-            <h2>My Skills</h2>
-            <div class="skill">
-                <span>HTML</span>
-                <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-            </div>
-            <div class="skill">
-                <span>CSS</span>
-                <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-            </div>
-            <div class="skill">
-                <span>JavaScript</span>
-                <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
-            </div>
-            <div class="skill">
-                <span>Python</span>
-                <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
-            </div>
-        </section>
+  <section id="contact" class="section card">
+    <h2>Kontak</h2>
+    <p>Hubungi saya lewat ikon media sosial di atas.</p>
+  </section>
+</main>
 
-        <section id="projects" class="section card">
-            <h2>Proyek Saya</h2>
-            <ul>
-                <li>🔧 Website Portofolio ini</li>
-                <li>🤖 Bot analisa candlestick crypto</li>
-                <li>📊 Dashboard investasi personal</li>
-            </ul>
-        </section>
+<footer>
+  <p>© 2025 Deven. Dibuat dengan HTML, CSS & JS.</p>
+</footer>
 
-        <section id="contact" class="section card">
-            <h2>Kontak</h2>
-            <p>Hubungi saya lewat ikon media sosial di atas.</p>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Deven. Dibuat dengan HTML, CSS & JS.</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
+<button onclick="scrollToTop()" class="scroll-top" title="Back to Top">↑</button>
+<div id="toast" class="toast">Dark Mode Aktif</div>
 </body>
 </html>
