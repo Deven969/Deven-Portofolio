@@ -427,15 +427,15 @@ body.light .navbar {
 }
 
 body.light .navbar-menu li a {
-  color: #a020f0 !important;
+  color: #ffffff !important;
 }
 
 body.light .navbar-menu li a:hover,
 body.light .navbar-menu li a.active {
-  color: #a020f0 !important;
-  border-bottom: 2px solid #a020f0 !important;
+  color: #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
 }
 
 body.light .navbar-logo {
-  color: #a020f0 !important;
+  color: #ffffff !important;
 }
