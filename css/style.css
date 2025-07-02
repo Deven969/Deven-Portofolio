@@ -20,37 +20,38 @@ body {
 
 /* LIGHT THEME OVERRIDE */
 body.light {
-    background: linear-gradient(120deg, #ffffff, #81a6f2);
-    color: #222;
+    background: linear-gradient(120deg, #fdf6e3, #d2b48c);
+    color: #3e2f1c;
 }
 
 body.light header,
 body.light footer {
-    color: #333;
+    color: #4b3b2a;
+    background: rgba(210, 180, 140, 0.15);
 }
 
 body.light .highlight {
-    color: #f5f5f5;
+    color: #8b5e3c;
 }
 
 body.light .cursor {
-    color: #333;
+    color: #4b3b2a;
 }
 
 body.light .theme-toggle button {
-    background: linear-gradient(90deg, #81d7ff 60%, #ffd6f5 100%);
-    color: #0040ff;
+    background: linear-gradient(90deg, #d2b48c 60%, #f5deb3 100%);
+    color: #4b3b2a;
     border: none;
 }
 
 body.light .theme-toggle button:hover {
-    background: #38b0ff;
+    background: #c19a6b;
     color: #ffffff;
 }
 
 body.light .card {
-    background: #ffffff;
-    border: 1px solid #00fffb;
+    background: #fffaf3;
+    border: 1px solid #deb887;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
@@ -130,6 +131,8 @@ header {
     box-shadow: 0 12px 40px #a020f099;
     transform: translateY(-4px) scale(1.01);
 }
+
+/* ... rest of the CSS file ... */
 
 
 
