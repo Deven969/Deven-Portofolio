@@ -65,6 +65,23 @@ body.light .profile-img:hover {
     box-shadow: 0 0 40px #8b4513aa;
 }
 
+body.light .progress-bar {
+    background: #f5deb3;
+}
+
+body.light .progress {
+    background: linear-gradient(90deg, #a0522d 60%, #8b4513 100%);
+}
+
+body.light .skill span {
+    color: #8b4513;
+}
+
+body.light .section h2 {
+    color: #8b4513;
+    text-shadow: none;
+}
+
 /* TOGGLE BUTTON */
 .theme-toggle {
     position: fixed;
@@ -141,6 +158,8 @@ header {
     box-shadow: 0 12px 40px #a020f099;
     transform: translateY(-4px) scale(1.01);
 }
+
+/* ... rest of the CSS file ... */
 
 /* ... rest of the CSS file ... */
 
