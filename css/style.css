@@ -458,9 +458,9 @@ body.light .navbar {
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08) !important;
   transition: background 0.5s ease, box-shadow 0.5s ease;
 }
-
+/*teks ABout dll*/
 body.light .navbar-menu li a {
-  color: #ffffff59 !important;
+  color: #ffffff !important;
 }
 
 body.light .navbar-menu li a:hover,
