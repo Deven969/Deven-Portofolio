@@ -43,7 +43,6 @@ body.light .theme-toggle button {
     border: none;
 }
 
-
 body.light .theme-toggle button:hover {
     background: #38b0ff;
     color: #ffffff;
@@ -54,8 +53,6 @@ body.light .card {
     border: 1px solid #00fffb;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
-
-
 
 /* TOGGLE BUTTON */
 .theme-toggle {
@@ -133,6 +130,9 @@ header {
     box-shadow: 0 12px 40px #a020f099;
     transform: translateY(-4px) scale(1.01);
 }
+
+
+
 
 /* ICONS */
 .social-icons {
