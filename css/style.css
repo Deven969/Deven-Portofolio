@@ -186,17 +186,17 @@ main {
     border-bottom: none;
 }
 
-/*bagian tentang Tentang Saya */
+/*bagian tentang Tentang Saya*/
 .section h2 {
     font-size: 2rem;
-    color: #593605;
-    text-shadow: 0 2px 8px #ff990055;
+    color: #fff;
+    text-shadow: 0 2px 8px #a020f055;
     margin-bottom: 18px;
     transition: color 0.4s ease, text-shadow 0.4s ease;
 }
 
 body.light .section h2 {
-    color: #451d00; /* tetap pakai warna tema ungu */
+    color: #a020f0; /* tetap pakai warna tema ungu */
     text-shadow: none;
 }
 
@@ -452,4 +452,8 @@ body.light .navbar-menu li a.active {
 
 body.light .navbar-logo {
   color: #ffffff !important;
+}
+body.light .section h2 {
+  color: #8b4513; /* atau warna coklat lain sesuai selera */
+  text-shadow: none;
 }
