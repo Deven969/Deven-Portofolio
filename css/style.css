@@ -227,6 +227,14 @@ header {
   margin-left: 4px;
   margin-right: 4px;
 }
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 8px #a020f055;
+}
+
  
 /* CARD */
 .card {
