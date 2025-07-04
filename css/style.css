@@ -637,8 +637,8 @@ body:not(.light) .navbar-menu li a {
 
 body:not(.light) .navbar-menu li a:hover,
 body:not(.light) .navbar-menu li a.active {
-  color: #a020f0;
-  border-bottom: 2px solid #a020f0;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 
 /* LIGHT MODE override */
