@@ -647,3 +647,74 @@ body.light .navbar-menu li a.active {
   color: #4d2d00 !important;
   border-bottom: 2px solid #ffffff !important;
 }
+.testimonial-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.testimonial-carousel img {
+  height: 160px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #00000033;
+  transition: transform 0.3s ease;
+}
+.testimonial-carousel img:hover {
+  transform: scale(1.05);
+}
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #a020f055;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group button {
+  align-self: flex-start;
+  padding: 10px 24px;
+  border: none;
+  background: #a020f0;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-group button:hover {
+  background: #71019e;
+}
+
+body.light .form-group input,
+body.light .form-group textarea {
+  background: #fffaf3;
+  color: #4d2d00;
+  border: 1px solid #d2b48c;
+}
+
+body.light .form-group button {
+  background: #8b4513;
+}
+
+body.light .form-group button:hover {
+  background: #a0522d;
+}
