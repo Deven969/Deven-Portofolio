@@ -93,17 +93,16 @@ window.addEventListener("scroll", () => {
 });
 
 // === MOBILE NAV TOGGLE ===
-const mobileToggle = document.createElement("button");
-mobileToggle.className = "mobile-nav-toggle";
-mobileToggle.innerHTML = "☰";
-document.querySelector(".navbar-container").prepend(mobileToggle);
+
 
 const navMenu = document.querySelector(".navbar-menu");
 const overlay = document.createElement("div");
 overlay.className = "mobile-overlay";
 document.body.appendChild(overlay);
 
+const mobileToggle = document.getElementById("mobile-menu-toggle");
 mobileToggle.addEventListener("click", () => {
+
     navMenu.classList.toggle("show");
     overlay.classList.toggle("show");
 });
