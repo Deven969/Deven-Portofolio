@@ -207,12 +207,15 @@ header {
 
 .profile-img {
     width: 220px;
+    max-width: 100%;
+    height: auto;
     height: 220px;
     border-radius: 50%;
     object-fit: cover;
     border: 6px solid #8b451320;
     box-shadow: 0 0 30px #8b4513aa;
     transition: transform 0.3s, box-shadow 0.3s;
+    
 }
 .profile-img:hover {
     transform: scale(1.05) rotate(-2deg);
@@ -365,6 +368,7 @@ footer {
     .profile-img {
         width: 140px;
         height: 140px;
+        height:auto;
     }
     .section h2 {
         font-size: 1.3rem;
