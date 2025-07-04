@@ -40,7 +40,7 @@ window.onload = () => {
 
 // === SCROLL TO TOP ===
 const scrollBtn = document.createElement("button");
-scrollBtn.textContent = "⬆️";
+scrollBtn.textContent = "↑";
 scrollBtn.className = "scroll-top";
 scrollBtn.style.display = "none";
 document.body.appendChild(scrollBtn);
