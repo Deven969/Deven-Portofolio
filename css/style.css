@@ -9,8 +9,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 /* DEFAULT DARK THEME */
-body {
-    background: linear-gradient(120deg, #0a0a0a, #71019e);
+body {    
+    background: linear-gradient(180deg, #0a0a0a, #420268, #71019e);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #f0f0f0;
     font-family: 'Montserrat', 'Segoe UI', sans-serif;
     line-height: 1.7;
@@ -212,6 +215,7 @@ header {
     height: 220px;
     border-radius: 50%;
     object-fit: cover;
+    aspect-ratio: 1 / 1;
     border: 6px solid #8b451320;
     box-shadow: 0 0 30px #8b4513aa;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -226,13 +230,6 @@ header {
   text-align: justify;
   margin-left: 4px;
   margin-right: 4px;
-}
-.section h2 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-shadow: 0 2px 8px #a020f055;
 }
 
  
@@ -383,6 +380,7 @@ footer {
         width: 140px;
         height: 140px;
         height:auto;
+        aspect-ratio: 1/1;
     }
     .section h2 {
         font-size: 1.3rem;
