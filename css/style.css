@@ -222,12 +222,18 @@ header {
     box-shadow: 0 0 40px #a0522dcc;
 }
 
+.section p {
+  text-align: justify;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+ 
 /* CARD */
 .card {
     background: rgba(255, 255, 255, 0.09);
     left: 0;
     right: 0;
-    padding: 32px 36px;
+    padding: 32px 48px;
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(160,32,240,0.15);
     border: 1px solid #a020f033;
