@@ -429,9 +429,9 @@ footer {
 
 /* Untuk highlight menu aktif */
 nav a.active {
-    color: #a020f0;
+    color: #ffffff;
     font-weight: bold;
-    border-bottom: 2px solid #a020f0;
+    border-bottom: 2px solid #ffffff52;
 }
 
 .skill {
