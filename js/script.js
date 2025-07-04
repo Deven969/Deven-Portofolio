@@ -95,7 +95,7 @@ function animateSkillBars() {
 
   const skillsSection = document.getElementById("skills");
   const rect = skillsSection.getBoundingClientRect();
-  const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+  const isVisible = rect.top < window.innerHeight - 50 && rect.bottom > 0;
 
   if (isVisible) {
     document.querySelectorAll('.progress-bar').forEach((barWrapper, index) => {
@@ -106,14 +106,15 @@ function animateSkillBars() {
       setTimeout(() => {
         bar.style.width = target + "%";
         if (text) text.textContent = target + "%";
-      }, index * 150);
+      }, index * 200); // Delay antar bar
     });
-
     progressAnimated = true;
   }
 }
 
 window.addEventListener("scroll", animateSkillBars);
+window.addEventListener("load", animateSkillBars); // ini penting buat mobile
+
 
 
 // === MOBILE NAV TOGGLE ===
