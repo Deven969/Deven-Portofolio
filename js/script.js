@@ -19,11 +19,11 @@ function setTheme(mode) {
     if (mode === "light") {
         body.classList.add("light");
         toggleBtn.textContent = "🌙";
-        showToast("Light mode aktif");
+        
     } else {
         body.classList.remove("light");
         toggleBtn.textContent = "☀️";
-        showToast("Dark mode aktif");
+        
     }
     localStorage.setItem("theme", mode);
 }
@@ -56,9 +56,15 @@ scrollBtn.addEventListener("click", () => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
-        });
+        const targetId = this.getAttribute("href");
+        if (targetId && targetId !== "#") {
+            const target = document.querySelector(targetId);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            }
+        }
     });
 });
 
@@ -82,19 +88,35 @@ window.addEventListener("scroll", () => {
 });
 
 // === PROGRESS BAR ANIMATION ===
-window.addEventListener("scroll", () => {
-    document.querySelectorAll('.progress').forEach(bar => {
-        const rect = bar.getBoundingClientRect();
-        if (rect.top < window.innerHeight && !bar.classList.contains('animated')) {
-            bar.classList.add('animated');
-            bar.style.width = bar.getAttribute('style').match(/width:\s*([\d.]+%)/)[1];
-        }
+let progressAnimated = false;
+
+function animateSkillBars() {
+  if (progressAnimated) return;
+
+  const skillsSection = document.getElementById("skills");
+  const rect = skillsSection.getBoundingClientRect();
+  const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+  if (isVisible) {
+    document.querySelectorAll('.progress-bar').forEach((barWrapper, index) => {
+      const target = barWrapper.getAttribute('data-progress');
+      const bar = barWrapper.querySelector('.progress');
+      const text = barWrapper.querySelector('.progress-text');
+
+      setTimeout(() => {
+        bar.style.width = target + "%";
+        if (text) text.textContent = target + "%";
+      }, index * 150);
     });
-});
+
+    progressAnimated = true;
+  }
+}
+
+window.addEventListener("scroll", animateSkillBars);
+
 
 // === MOBILE NAV TOGGLE ===
-
-
 const navMenu = document.querySelector(".navbar-menu");
 const overlay = document.createElement("div");
 overlay.className = "mobile-overlay";
@@ -102,7 +124,6 @@ document.body.appendChild(overlay);
 
 const mobileToggle = document.getElementById("mobile-menu-toggle");
 mobileToggle.addEventListener("click", () => {
-
     navMenu.classList.toggle("show");
     overlay.classList.toggle("show");
 });

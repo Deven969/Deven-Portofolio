@@ -1,12 +1,12 @@
-/* RESET */
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 
 /* DEFAULT DARK THEME */
 body {    
@@ -14,7 +14,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #f0f0f0;
+    color: #ffffff;
     font-family: 'Montserrat', 'Segoe UI', sans-serif;
     line-height: 1.7;
     padding: 20px;
@@ -49,7 +49,7 @@ body.light .theme-toggle button {
 }
 
 body.light .theme-toggle button:hover {
-    background: #a0522d;
+    background: #5c044f;
     color: #ffffff;
 }
 
@@ -367,6 +367,8 @@ body.light .section h2 {
 footer {
     text-align: center;
     padding: 20px;
+    nav-left: auto;
+    nav-right: auto;
     color: #999;
     font-size: 0.9rem;
 }
@@ -759,11 +761,56 @@ body.light .form-group button:hover {
   height: 180px;
   object-fit: cover;
   border-radius: 16px;
-  box-shadow: 0 4px 12px #a020f055;
+  box-shadow: 0 4px 12px #8d8d8d55;
   transition: transform 0.3s ease;
 }
 
 .carousel img:hover {
   transform: scale(1.08) rotate(-2deg);
-  box-shadow: 0 6px 18px #a020f099;
+  box-shadow: 0 6px 18px #67676799;
+}
+.progress {
+  height: 100%;
+  width: 0%; /* Mulai dari 0, baru nanti diisi lewat JS */
+  background: #a020f0;
+  border-radius: 8px;
+  transition: width 1.5s ease-in-out;
+}
+.progress-bar {
+  background: #2d2d2d;
+  border-radius: 8px;
+  height: 18px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 2px 8px #a020f055;
+  position: relative;
+}
+.progress-bar {
+  position: relative;
+}
+
+.progress-text {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #a020f0;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: #a020f0;
+  border-radius: 8px;
+  transition: width 1.5s ease-in-out;
+}
+
+.progress-text {
+  position: absolute;
+  right: 10px;
+  top: -24px;
+  color: #a020f0;
+  font-size: 14px;
+  font-weight: bold;
 }
