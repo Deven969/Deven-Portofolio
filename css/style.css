@@ -506,8 +506,8 @@ body.light .progress-bar {
 
 .navbar-menu li a:hover,
 .navbar-menu li a.active {
-    color: #a020f0;
-    border-bottom: 2px solid #a020f0;
+    color: #a020f000;
+    border-bottom: 2px solid #a020f000;
 }
 
 .theme-toggle-btn {
