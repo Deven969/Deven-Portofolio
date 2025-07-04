@@ -1,150 +1,128 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Deven</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Deven</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-    <!-- Dark Mode Toggle -->
-    <div class="theme-toggle">
-        <button id="toggle-theme">☀️</button>
+  <!-- Dark Mode Toggle -->
+  <div class="theme-toggle">
+    <button id="toggle-theme">☀️</button>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo">MyPorto</a>
+      <button id="mobile-menu-toggle" class="mobile-nav-toggle">☰</button>
+      <ul class="navbar-menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#" class="navbar-logo">MyPorto</a>
+  <!-- HEADER -->
+  <header id="home">
+    <div class="header-content">
+      <h1><span class="highlight">Deven</span></h1>
+      <p class="tagline">Mahasiswa • Programmer • Penggemar Kripto<span class="cursor">|</span></p>
+    </div>
+    <img src="assets/mukaaku.jpg" alt="Foto Profil" class="profile-img" />
+  </header>
 
-    <!-- Tombol bulat untuk toggle menu (khusus mobile) -->
-            <button id="mobile-menu-toggle" class="mobile-nav-toggle">☰</button>
+  <!-- MAIN CONTENT -->
+  <main>
 
-    <!-- Menu navigasi -->
-            <ul class="navbar-menu">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <!-- LAYANAN -->
+    <section class="section card" id="services">
+      <h2 style="text-align: center;">Layanan Saya</h2>
+      <ul>
+        <li>✅ Pembuatan Website Portofolio & Landing Page</li>
+        <li>🤖 Automasi menggunakan Python (Bot, Scraper)</li>
+        <li>📊 Konsultasi & Riset Kripto untuk Pemula</li>
+      </ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section card">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah seorang mahasiswa yang sedang meniti jalur teknologi modern, dengan fokus utama pada web development, pemrograman, dan eksplorasi dunia kripto. Bagi saya, dunia digital bukan sekadar tempat bermain kode — tapi juga ruang untuk berinovasi, membangun solusi nyata, dan membuka peluang di masa depan.
+        <br><br>
+        Di balik setiap baris kode yang saya tulis, ada semangat untuk belajar, bereksperimen, dan terus berkembang. Saya percaya bahwa teknologi bukan hanya milik mereka yang expert, tapi milik siapa pun yang punya kemauan untuk memulai. Karena itu saya terus mengejar ilmu baru, mencoba proyek-proyek personal, dan membangun portofolio yang bisa berbicara lebih dari sekadar nilai akademis.
+        <br><br>
+        Saat ini saya sedang fokus memperdalam keterampilan di bidang front-end development dan data automasi. Di waktu senggang, saya juga aktif mengembangkan bot analisis crypto serta membuat konten edukatif yang simpel tapi berdampak. Bagi saya, menjadi developer bukan hanya tentang teknis, tapi juga tentang bagaimana kita bisa memberi nilai untuk orang lain.
+        <br><br>
+        <em>"Kita tidak perlu menjadi luar biasa untuk memulai, tapi kita harus mulai untuk bisa menjadi luar biasa." – Zig Ziglar</em>
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section card">
+      <h2>My Skills</h2>
+      <div class="skill"><span>HTML</span><div class="progress-bar"><div class="progress" style="width: 90%"></div></div></div>
+      <div class="skill"><span>CSS</span><div class="progress-bar"><div class="progress" style="width: 85%"></div></div></div>
+      <div class="skill"><span>JavaScript</span><div class="progress-bar"><div class="progress" style="width: 70%"></div></div></div>
+      <div class="skill"><span>Python</span><div class="progress-bar"><div class="progress" style="width: 80%"></div></div></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section card">
+      <h2>Proyek Saya</h2>
+      <ul>
+        <li>🔧 Website Portofolio ini</li>
+        <li>🤖 Bot analisa candlestick crypto</li>
+        <li>📊 Dashboard investasi personal</li>
+      </ul>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimoni" class="section card">
+      <h2 style="text-align: center;">Testimoni</h2>
+      <div class="carousel-container">
+        <div class="carousel">
+          <img src="assets/mukaaku.jpg" alt="Testi 1" />
+          <img src="assets/mukaaku.jpg" alt="Testi 2" />
+          <img src="assets/mukaaku.jpg" alt="Testi 3" />
+          <img src="assets/mukaaku.jpg" alt="Testi 4" />
+          <img src="assets/mukaaku.jpg" alt="Testi 5" />
         </div>
-    </nav>
+      </div>
+    </section>
 
-    
-
-    <!-- Header -->
-    <header id="home">
-        <div class="header-content">        
-            <h1><span class="highlight">Deven</span></h1>
-            <p class="tagline">Mahasiswa • Programmer • Penggemar Kripto<span class="cursor">|</span></p>
-            
+    <!-- CONTACT FORM -->
+    <section class="section card" id="contact">
+      <h2>Hubungi Saya</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Nama" required />
+          <input type="text" placeholder="Nomor HP" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Pesan..." rows="4" required></textarea>
+          <button type="submit">Kirim Pesan</button>
         </div>
-        <img src="assets/mukaaku.jpg" alt="Foto Profil" class="profile-img">
-    </header>
+      </form>
+      <div class="social-icons">
+        <a href="https://www.tiktok.com/@devenlovecoffee?_t=ZS-8xVp321PtnE&_r=1" target="_blank"><img src="assets/tiktok.svg" alt="TikTok" /></a>
+        <a href="https://www.instagram.com/devenjs?igsh=MWxjNDU1anAzcHR4dA==" target="_blank"><img src="assets/ig.svg" alt="Instagram" /></a>
+        <a href="https://wa.me/" target="_blank"><img src="assets/whatsapp.svg" alt="WhatsApp" /></a>
+      </div>
+    </section>
 
-    <!-- Main -->
-    <main>
-        <section class="section card" id="services">
-            <h2>Layanan Saya</h2>
-                <ul>
-                    <li>✅ Pembuatan Website Portofolio & Landing Page</li>
-                    <li>🤖 Automasi menggunakan Python (Bot, Scraper)</li>
-                    <li>📊 Konsultasi & Riset Kripto untuk Pemula</li>
-                </ul>
-        </section>
+  </main>
 
-        <section id="about" class="section card">
-            <h2>Tentang Saya</h2>
-            <p>
-                Saya adalah seorang mahasiswa yang sedang meniti jalur teknologi modern, dengan fokus utama pada web development, pemrograman, dan eksplorasi dunia kripto. Bagi saya, dunia digital bukan sekadar tempat bermain kode — tapi juga ruang untuk berinovasi, membangun solusi nyata, dan membuka peluang di masa depan.
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Deven. Dibuat dengan HTML, CSS & JS.</p>
+  </footer>
 
-                Di balik setiap baris kode yang saya tulis, ada semangat untuk belajar, bereksperimen, dan terus berkembang. Saya percaya bahwa teknologi bukan hanya milik mereka yang expert, tapi milik siapa pun yang punya kemauan untuk memulai. Karena itu saya terus mengejar ilmu baru, mencoba proyek-proyek personal, dan membangun portofolio yang bisa berbicara lebih dari sekadar nilai akademis.
-
-                Saat ini saya sedang fokus memperdalam keterampilan di bidang front-end development dan data automasi. Di waktu senggang, saya juga aktif mengembangkan bot analisis crypto serta membuat konten edukatif yang simpel tapi berdampak. Bagi saya, menjadi developer bukan hanya tentang teknis, tapi juga tentang bagaimana kita bisa memberi nilai untuk orang lain.
-
-                <br><br> 
-                <em>"Kita tidak perlu menjadi luar biasa untuk memulai, tapi kita harus mulai untuk bisa menjadi luar biasa." – Zig Ziglar</em>
-
-            </p>
-        </section>
-
-        <section id="skills" class="section card">
-            <h2>My Skills</h2>
-            <div class="skill">
-                <span>HTML</span>
-                <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-            </div>
-            <div class="skill">
-                <span>CSS</span>
-                <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-            </div>
-            <div class="skill">
-                <span>JavaScript</span>
-                <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
-            </div>
-            <div class="skill">
-                <span>Python</span>
-                <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
-            </div>
-        </section>
-
-        <section id="projects" class="section card">
-            <h2>Proyek Saya</h2>
-            <ul>
-                <li>🔧 Website Portofolio ini</li>
-                <li>🤖 Bot analisa candlestick crypto</li>
-                <li>📊 Dashboard investasi personal</li>
-            </ul>
-        </section>
-
-        <section class="section card" id="testimonials">
-            <h2>Testimoni</h2>
-                <div class="testimonial-carousel">
-                    <img src="assets/mukaaku.jpg" alt="Testi 1">
-                    <img src="assets/mukaaku.jpg" alt="Testi 2">
-                    <img src="assets/mukaaku.jpg" alt="Testi 3">
-                    <img src="assets/mukaaku.jpg" alt="Testi 4">
-                    <img src="assets/mukaaku.jpg" alt="Testi 5">
-                    <img src="assets/mukaaku.jpg" alt="Testi 6">
-                    <img src="assets/mukaaku.jpg" alt="Testi 7">
-                    <img src="assets/mukaaku.jpg" alt="Testi 8">
-                    <img src="assets/mukaaku.jpg" alt="Testi 9">
-                    <img src="assets/mukaaku.jpg" alt="Testi 0">
-                </div>
-        </section>
-
-        <section class="section card" id="contact">
-            <h2>Hubungi Saya</h2>
-                <form>
-                    <div class="form-group">
-                        <input type="text" placeholder="Nama" required>
-                        <input type="text" placeholder="Nomor HP" required>
-                        <input type="email" placeholder="Email" required>
-                        <textarea placeholder="Pesan..." rows="4" required></textarea>
-                        <button type="submit">Kirim Pesan</button>
-                    </div>
-                </form>
-                <div class="social-icons">
-                    <a href="https://www.tiktok.com/@devenlovecoffee?_t=ZS-8xVp321PtnE&_r=1" target="_blank"><img src="assets/tiktok.svg" alt="TikTok"></a>
-                    <a href="https://www.instagram.com/devenjs?igsh=MWxjNDU1anAzcHR4dA==" target="_blank"><img src="assets/ig.svg" alt="Instagram"></a>
-                    <a href="https://wa.me/" target="_blank"><img src="assets/whatsapp.svg" alt="WhatsApp"></a>
-                </div>
-        </section>
-
-
-
-        <section id="contact" class="section card">
-            <h2>Kontak</h2>
-            <p>Hubungi saya lewat ikon media sosial di atas.</p>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Deven. Dibuat dengan HTML, CSS & JS.</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
