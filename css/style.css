@@ -779,12 +779,11 @@ body.light .form-group button:hover {
 .progress-bar {
   background: #2d2d2d;
   border-radius: 8px;
-  height: 18px;
-  width: 100%;
-  overflow: hidden;
-  box-shadow: 0 2px 8px #a020f055;
+  height: 24px; /* Tinggikan dikit supaya teks muat */
   position: relative;
+  overflow: hidden;
 }
+
 .progress-bar {
   position: relative;
 }
@@ -808,9 +807,16 @@ body.light .form-group button:hover {
 
 .progress-text {
   position: absolute;
+  top: 0;
   right: 10px;
-  top: -24px;
-  color: #a020f0;
-  font-size: 14px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5px;
+  font-size: 12px;
   font-weight: bold;
+  color: #ffffff;
+  z-index: 10;
 }
+

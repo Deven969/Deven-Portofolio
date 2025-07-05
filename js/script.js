@@ -90,31 +90,34 @@ window.addEventListener("scroll", () => {
 // === PROGRESS BAR ANIMATION ===
 let progressAnimated = false;
 
-function animateSkillBars() {
-  if (progressAnimated) return;
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting && !progressAnimated) {
+      document.querySelectorAll('.progress-bar').forEach((barWrapper, index) => {
+        const target = barWrapper.getAttribute('data-progress');
+        const bar = barWrapper.querySelector('.progress');
+        const text = barWrapper.querySelector('.progress-text');
 
+        setTimeout(() => {
+          bar.style.width = target + "%";
+          if (text) text.textContent = target + "%";
+        }, index * 200);
+      });
+      progressAnimated = true;
+      observer.disconnect(); // stop observe setelah animasi
+    }
+  });
+}, {
+  threshold: 0.4 // at least 40% terlihat baru aktif
+});
+
+window.addEventListener("DOMContentLoaded", () => {
   const skillsSection = document.getElementById("skills");
-  const rect = skillsSection.getBoundingClientRect();
-  const isVisible = rect.top < window.innerHeight - 50 && rect.bottom > 0;
 
-  if (isVisible) {
-    document.querySelectorAll('.progress-bar').forEach((barWrapper, index) => {
-      const target = barWrapper.getAttribute('data-progress');
-      const bar = barWrapper.querySelector('.progress');
-      const text = barWrapper.querySelector('.progress-text');
-
-      setTimeout(() => {
-        bar.style.width = target + "%";
-        if (text) text.textContent = target + "%";
-      }, index * 200); // Delay antar bar
-    });
-    progressAnimated = true;
+  if (skillsSection) {
+    observer.observe(skillsSection);
   }
-}
-
-window.addEventListener("scroll", animateSkillBars);
-window.addEventListener("load", animateSkillBars); // ini penting buat mobile
-
+});
 
 
 // === MOBILE NAV TOGGLE ===
