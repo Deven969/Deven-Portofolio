@@ -820,3 +820,116 @@ body.light .form-group button:hover {
   z-index: 10;
 }
 
+/* GREEN-BLACK THEME */
+body {
+    background: linear-gradient(120deg, #132A1A, #2B4E31, #020604);
+    color: #D5DFCF;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    padding: 20px;
+    transition: background 1s, color 0.5s;
+}
+
+header, .card, .navbar {
+    background: rgba(73, 114, 75, 0.13); /* #49724B transparan */
+    color: #D5DFCF;
+    box-shadow: 0 8px 32px rgba(44, 78, 49, 0.15); /* #2B4E31 */
+}
+
+.navbar {
+    background: rgba(44, 78, 49, 0.95); /* #2B4E31 */
+    box-shadow: 0 2px 16px #132A1A;
+}
+
+.navbar-logo {
+    color: #A3BA9C;
+}
+
+.navbar-menu li a {
+    color: #D5DFCF;
+}
+.navbar-menu li a:hover,
+.navbar-menu li a.active {
+    color: #A3BA9C;
+    border-bottom: 2px solid #A3BA9C;
+}
+
+.theme-toggle button {
+    background: linear-gradient(90deg, #74966F 60%, #49724B 100%);
+    color: #D5DFCF;
+    border: none;
+    box-shadow: 0 2px 8px #49724B55;
+}
+
+.theme-toggle button:hover {
+    background: #D5DFCF;
+    color: #49724B;
+}
+
+.card {
+    background: rgba(73, 114, 75, 0.18); /* #49724B transparan */
+    border: 1px solid #A3BA9C;
+    box-shadow: 0 8px 32px rgba(44, 78, 49, 0.15);
+}
+
+.section h2 {
+    color: #A3BA9C;
+    text-shadow: 0 2px 8px #49724B55;
+}
+
+.highlight {
+    color: #A3BA9C;
+}
+
+.profile-img {
+    border: 6px solid #A3BA9C;
+    box-shadow: 0 0 30px #49724B99;
+}
+
+.profile-img:hover {
+    box-shadow: 0 0 40px #74966Fcc;
+}
+
+.skill span {
+    color: #A3BA9C;
+}
+
+.progress-bar {
+    background: #2B4E31;
+}
+
+.progress {
+    background: linear-gradient(90deg, #A3BA9C 60%, #74966F 100%);
+}
+
+.social-icons a img {
+    background: #D5DFCF;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px #49724B55;
+}
+
+.social-icons a img:hover {
+    box-shadow: 0 4px 16px #A3BA9Ccc;
+    filter: drop-shadow(0 0 5px #A3BA9C);
+}
+
+footer {
+    background: #132A1A;
+    color: #A3BA9C;
+}
+
+/* Toast, scroll-top, dan lain-lain tetap bisa pakai warna hijau gelap atau hijau pastel */
+.toast {
+    background: #49724B;
+    color: #D5DFCF;
+}
+
+.scroll-top {
+    background: #A3BA9C;
+    color: #132A1A;
+}
+
+.scroll-top:hover {
+    background: #D5DFCF;
+    color: #49724B;
+}
