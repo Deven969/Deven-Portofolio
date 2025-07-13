@@ -23,71 +23,74 @@ body {
 
 /* LIGHT THEME OVERRIDE */
 body.light {
-    background: linear-gradient(120deg, #5c3a21, #a67b5b);
-    color: #3e2f1c;
-}
+    background: linear-gradient(180deg, #000000, #0aa302);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000000;
+}   
 
 body.light header,
 body.light footer {
-    color: #4b3b2a;
-    background: rgba(210, 180, 140, 0.25);
+    color: #09b314;
+    background: rgba(21, 255, 0, 0.25);
 }
 
 body.light .highlight {
-    color: #ffffff;
+    color: #37bd0b;
 }
 
 body.light .cursor {
-    color: #4b3b2a;
+    color: #55ff00;
 }
 
 body.light .theme-toggle button {
-    background: linear-gradient(90deg, #a67b5b 60%, #deb887 100%);
-    color: #4b3b2a;
+    background: linear-gradient(45deg, #000000 , #02ff63 );
+    color: #318b00;
     border: none;
-    box-shadow: 0 2px 8px rgba(139, 94, 60, 0.2);
+    box-shadow: 0 2px 8px rgba(3, 103, 11, 0.2);
 }
 
 body.light .theme-toggle button:hover {
-    background: #5c044f;
+    background: #26ff00;
     color: #ffffff;
 }
 
 body.light .card {
     background: #fffaf3;
-    border: 1px solid #d2b48c;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border: 1px solid #27a804;
+    box-shadow: 0 4px 12px rgba(7, 174, 21, 0.06);
 }
 
 body.light .profile-img {
-    border: 6px solid #d2b48c;
-    box-shadow: 0 0 30px #b8860b99;
+    border: 6px solid #00ba28;
+    box-shadow: 0 0 30px #05660099;
 }
 
 body.light .profile-img:hover {
-    box-shadow: 0 0 40px #8b4513aa;
+    box-shadow: 0 0 40px #2fff00aa;
 }
 
 body.light .progress-bar {
-    background: #f5deb3;
+    background: #017003;
 }
 
 body.light .progress {
-    background: linear-gradient(90deg, #a0522d 60%, #8b4513 100%);
+    background: linear-gradient(90deg, #05cc3d 60%, #025f06 100%);
 }
 
 body.light .skill span {
-    color: #8b4513;
+    color: #07b610;
 }
 
 body.light .section h2 {
-    color: #8b4513;
+    color: #25c402;
     text-shadow: none;
 }
 
 body.light .navbar {
-    background: rgba(104, 61, 0, 0.381) !important;
-    box-shadow: 0 2px 16px rgba(212, 112, 12, 0.516) !important;
+    background: rgba(4, 175, 21, 0.381) !important;
+    box-shadow: 0 2px 16px rgba(45, 212, 12, 0.516) !important;
 }
 
 body.light .navbar-menu li a {
@@ -96,7 +99,7 @@ body.light .navbar-menu li a {
 
 body.light .navbar-menu li a:hover,
 body.light .navbar-menu li a.active {
-    color: #4d2d00 !important;
+    color: #000000 !important;
     border-bottom: 2px solid #ffffff !important;
 }
 
@@ -105,7 +108,7 @@ body.light .navbar-logo {
 }
 
 body.light .tagline {
-    color: #4b2b1b;
+    color: #26d712;
 }
 
 /* TOGGLE BUTTON */
@@ -117,10 +120,10 @@ body.light .tagline {
 }
 
 .theme-toggle button {
-    background: linear-gradient(90deg, #a0522d 60%, #8b4513 100%);
+    background: linear-gradient(90deg, #2da033 60%, #138b25 100%);
     color: #fff;
     border: none;
-    box-shadow: 0 2px 8px #8b451355;
+    box-shadow: 0 2px 8px #138b1555;
     font-weight: bold;
     letter-spacing: 1px;
     border-radius: 8px;
@@ -131,7 +134,7 @@ body.light .tagline {
 }
 .theme-toggle button:hover {
     background: #fff;
-    color: #8b4513;
+    color: #138b23;
     transform: scale(1.08);
 }
 
@@ -166,8 +169,8 @@ body.light .tagline {
         display: flex;
     }
     .mobile-nav-toggle {
-        background: #8b4513;
-        color: white;
+        background: linear-gradient(90deg, #2da033 60%, #138b25 100%);
+        color: rgb(0, 0, 0);
         border: none;
         border-radius: 50%;
         width: 42px;
@@ -203,9 +206,9 @@ header {
     padding: 48px 24px;
     max-width: 1200px;
     margin: 0 auto;
-    background: rgba(139, 69, 19, 0.07);
+    background: rgba(27, 139, 19, 0.07);
     border-radius: 18px;
-    box-shadow: 0 8px 32px rgba(139, 69, 19, 0.15);
+    box-shadow: 0 8px 32px rgba(29, 139, 19, 0.15);
 }
 
 .header-content {
@@ -222,14 +225,14 @@ header {
     border-radius: 50%;
     object-fit: cover;
     aspect-ratio: 1 / 1;
-    border: 6px solid #8b451320;
-    box-shadow: 0 0 30px #8b4513aa;
+    border: 6px solid #138b1520;
+    box-shadow: 0 0 30px #178b13aa;
     transition: transform 0.3s, box-shadow 0.3s;
     
 }
 .profile-img:hover {
     transform: scale(1.05) rotate(-2deg);
-    box-shadow: 0 0 40px #a0522dcc;
+    box-shadow: 0 0 40px #2da02fcc;
 }
 
 .section p {
@@ -265,7 +268,7 @@ header {
 }
 
 body.light .tagline {
-    color: #4b2b1b;
+    color: #204b1b;
 }
 
 /* OVERLAY FOR MOBILE MENU */
@@ -469,7 +472,7 @@ nav a.active {
     height: 18px;
     width: 100%;
     overflow: hidden;
-    box-shadow: 0 2px 8px #a020f055;
+    box-shadow: 0 2px 8px #00000055;
 }
 .progress {
     height: 100%;
@@ -586,8 +589,8 @@ section {
 
 /* ======= OVERRIDE NAVBAR SAAT LIGHT MODE ======= */
 body.light .navbar {
-  background: rgba(104, 61, 0, 0.381) !important;
-  box-shadow: 0 2px 16px rgba(212, 112, 12, 0.516) !important;
+  background: rgba(0, 104, 36, 0.381) !important;
+  box-shadow: 0 2px 16px rgba(19, 212, 12, 0.516) !important;
   transition: background 0.5s ease, box-shadow 0.5s ease;
 }
 /*teks ABout dll*/
@@ -597,7 +600,7 @@ body.light .navbar-menu li a {
 
 body.light .navbar-menu li a:hover,
 body.light .navbar-menu li a.active {
-  color: #4d2d00 !important;
+  color: #004d05 !important;
   border-bottom: 2px solid #ffffff !important;
 }
 
@@ -605,7 +608,7 @@ body.light .navbar-logo {
   color: #ffffff75 !important;
 }
 body.light .section h2 {
-  color: #8b4513; /* atau warna coklat lain sesuai selera */
+  color: #138b13; /* atau warna coklat lain sesuai selera */
   text-shadow: none;
 }
 
@@ -619,7 +622,7 @@ body.light .section h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #8b4513;
+    background: #158b13;
     color: white;
     border: none;
     border-radius: 50%;
@@ -668,7 +671,7 @@ body.light .navbar-menu li a {
 
 body.light .navbar-menu li a:hover,
 body.light .navbar-menu li a.active {
-  color: #4d2d00 !important;
+  color: #114d00 !important;
   border-bottom: 2px solid #ffffff !important;
 }
 .testimonial-carousel {
@@ -731,16 +734,16 @@ form .form-group {
 body.light .form-group input,
 body.light .form-group textarea {
   background: #fffaf3;
-  color: #4d2d00;
-  border: 1px solid #d2b48c;
+  color: #004d00;
+  border: 1px solid #8cd28d;
 }
 
 body.light .form-group button {
-  background: #8b4513;
+  background: #138b27;
 }
 
 body.light .form-group button:hover {
-  background: #a0522d;
+  background: #2da035;
 }
 
 .carousel-container {
@@ -820,116 +823,3 @@ body.light .form-group button:hover {
   z-index: 10;
 }
 
-/* GREEN-BLACK THEME */
-body {
-    background: linear-gradient(120deg, #132A1A, #2B4E31, #020604);
-    color: #D5DFCF;
-    font-family: 'Montserrat', 'Segoe UI', sans-serif;
-    line-height: 1.7;
-    padding: 20px;
-    transition: background 1s, color 0.5s;
-}
-
-header, .card, .navbar {
-    background: rgba(73, 114, 75, 0.13); /* #49724B transparan */
-    color: #D5DFCF;
-    box-shadow: 0 8px 32px rgba(44, 78, 49, 0.15); /* #2B4E31 */
-}
-
-.navbar {
-    background: rgba(44, 78, 49, 0.95); /* #2B4E31 */
-    box-shadow: 0 2px 16px #132A1A;
-}
-
-.navbar-logo {
-    color: #A3BA9C;
-}
-
-.navbar-menu li a {
-    color: #D5DFCF;
-}
-.navbar-menu li a:hover,
-.navbar-menu li a.active {
-    color: #A3BA9C;
-    border-bottom: 2px solid #A3BA9C;
-}
-
-.theme-toggle button {
-    background: linear-gradient(90deg, #74966F 60%, #49724B 100%);
-    color: #D5DFCF;
-    border: none;
-    box-shadow: 0 2px 8px #49724B55;
-}
-
-.theme-toggle button:hover {
-    background: #D5DFCF;
-    color: #49724B;
-}
-
-.card {
-    background: rgba(73, 114, 75, 0.18); /* #49724B transparan */
-    border: 1px solid #A3BA9C;
-    box-shadow: 0 8px 32px rgba(44, 78, 49, 0.15);
-}
-
-.section h2 {
-    color: #A3BA9C;
-    text-shadow: 0 2px 8px #49724B55;
-}
-
-.highlight {
-    color: #A3BA9C;
-}
-
-.profile-img {
-    border: 6px solid #A3BA9C;
-    box-shadow: 0 0 30px #49724B99;
-}
-
-.profile-img:hover {
-    box-shadow: 0 0 40px #74966Fcc;
-}
-
-.skill span {
-    color: #A3BA9C;
-}
-
-.progress-bar {
-    background: #2B4E31;
-}
-
-.progress {
-    background: linear-gradient(90deg, #A3BA9C 60%, #74966F 100%);
-}
-
-.social-icons a img {
-    background: #D5DFCF;
-    border-radius: 50%;
-    box-shadow: 0 2px 8px #49724B55;
-}
-
-.social-icons a img:hover {
-    box-shadow: 0 4px 16px #A3BA9Ccc;
-    filter: drop-shadow(0 0 5px #A3BA9C);
-}
-
-footer {
-    background: #132A1A;
-    color: #A3BA9C;
-}
-
-/* Toast, scroll-top, dan lain-lain tetap bisa pakai warna hijau gelap atau hijau pastel */
-.toast {
-    background: #49724B;
-    color: #D5DFCF;
-}
-
-.scroll-top {
-    background: #A3BA9C;
-    color: #132A1A;
-}
-
-.scroll-top:hover {
-    background: #D5DFCF;
-    color: #49724B;
-}
